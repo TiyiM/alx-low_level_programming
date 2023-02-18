@@ -23,6 +23,10 @@ int main(void)
 				putchar((e % 12) + 41);
 				if (e != 99 
 						|| f != 99);
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
