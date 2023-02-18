@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two diigts
+ * main - prints all possible different combinations of two digits
  *
  * Return: Always 0
  *
@@ -14,7 +14,7 @@ int main(void)
 
 	for (tens = '0'; tens <= '0'; tens++)/* prints tens digits*/
 	{
-		for (ones = '0'; ones <= '0'; ones++)/* prints omes digits*/
+		for (ones = '0'; ones <= '0'; ones++)/* prints ones digits*/
 		{
 			if (!((ones == tens) || (tens > ones)))/*eliminates repititions*/
 
@@ -29,6 +29,8 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
