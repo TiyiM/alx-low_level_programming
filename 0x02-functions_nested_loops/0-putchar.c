@@ -2,8 +2,8 @@
 
 /**
  * main - prints_putchar
- * is written by tiyim
- * Return: Always 0
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
