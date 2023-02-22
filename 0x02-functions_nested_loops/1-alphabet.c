@@ -1,22 +1,28 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point
+ * main - check the code
  *
- * Return: 0
+ * Return: Always 0
  */
 
-void print_alphabet(void)
+int main(void)
 
 {
-	char c = "a";
+	print_alphabet(void);
 
-	while (c <= 'z')
+	{
+
+		char c = "a";
+
+		while (c <= 'z')
 	{
 		_putchar(c);
 		c++
+        }
+	
+	_putchar('\n');
 	}
 
-	_putchar('\n');
-
+	return (0);
 }
