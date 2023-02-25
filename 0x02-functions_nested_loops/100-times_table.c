@@ -14,7 +14,7 @@ void print_times_table(int n)
 
 	while (s <= n)
 	{
-		for (t = 0; b <= n; t++)
+		for (t = 0; t <= n; t++)
 		{
 			rep = s * t;
 			if (t == 0)
