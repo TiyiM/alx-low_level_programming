@@ -10,18 +10,17 @@
 int main(void)
 {
 	int e = 0;
-	int sum = 0;
+	int n = 0;
 
 	while (e < 1024)
 	{
 		if (e % 3 == 0 || e % 5 == 0)
 		{
-			sum += e;
+			n += e;
 		}
-
 		e++;
 	}
 
-	printf("%i\n", sum);
+	printf("%i\n", n);
 	return (0);
 }
