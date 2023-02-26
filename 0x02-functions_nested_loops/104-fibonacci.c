@@ -5,7 +5,7 @@
  * main - A program that finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line
  * The numbers should be separated by comma, followed by a space ,
- * s will represent unsigned long int
+ * lu: will represent unsigned long int
  * Return: 0
  */
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 	unsigned long int i;
 	unsigned long int before = 1;
 	unsigned long int after = 2;
-	unsigned long int s = 1000000000;
+	unsigned long int lu = 1000000000;
 	unsigned long int before1;
 	unsigned long int before2;
 	unsigned long int after1;
