@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	unsigned long int n;
+	unsigned long int i;
 	unsigned long int before = 1;
 	unsigned long int after = 2;
-	unsigned long int i = 1000000000;
+	unsigned long int n = 1000000000;
 	unsigned long int before1;
 	unsigned long int before2;
 	unsigned long int after1;
@@ -20,7 +20,7 @@ int main(void)
 
 	printf("%lu", before);
 
-	for (n = 1; n < 91; n++)
+	for (i = 1; i < 91; i++)
 	{
 		printf(", %lu", after);
 		after += before;
@@ -32,7 +32,7 @@ int main(void)
 	after1 = (after / 1);
 	after2 = (after % 1);
 
-	for (n = 92; n < 99; n++)
+	for (i = 92; i < 99; i++)
 	{
 		printf(", %lu", after1 + (after2 / 1));
 		printf("%lu", after2 % 1);
