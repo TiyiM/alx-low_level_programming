@@ -21,6 +21,7 @@ int main(void)
 
 		e++;
 	}
+
 	printf("%i\n", sum);
 	return (0);
 }
