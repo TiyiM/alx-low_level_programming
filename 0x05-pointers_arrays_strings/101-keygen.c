@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	int pass[100];
 	int p, sum, q;
+	int pass[100];
 
 	sum = 0;
 
@@ -20,7 +20,7 @@ int main(void)
 	{
 		pass[p] = rand() % 78;
 		sum += (pass[p] + '0');
-		putchar(pass[1] + '0');
+		putchar(pass[p] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
 			q = 2772 - sum - '0';
