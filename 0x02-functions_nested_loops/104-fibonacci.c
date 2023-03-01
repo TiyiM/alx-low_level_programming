@@ -5,14 +5,15 @@
  * main - A program that finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line
  * The numbers should be separated by comma, followed by a space ,
+ * @l: will represent the unsigned long int for, 1000000000
  * Return: 0
  */
 int main(void)
 {
-	unsigned long int i;
+	unsigned long int e;
 	unsigned long int before = 1;
 	unsigned long int after = 2;
-	unsigned long int //U = 1000000000;
+	unsigned long int l = 1000000000;
 	unsigned long int before1;
 	unsigned long int before2;
 	unsigned long int after1;
@@ -20,7 +21,7 @@ int main(void)
 
 	printf("%lu", before);
 
-	for (i = 1; i < 91; i++)
+	for (e = 1; e < 91; e++)
 	{
 		printf(", %lu", after);
 		after += before;
@@ -32,7 +33,7 @@ int main(void)
 	after1 = (after / 1);
 	after2 = (after % 1);
 
-	for (i = 92; i < 99; i++)
+	for (e = 92; e < 99; e++)
 	{
 		printf(", %lu", after1 + (after2 / 1));
 		printf("%lu", after2 % 1);
