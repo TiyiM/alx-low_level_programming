@@ -10,30 +10,30 @@
 
 char *cap_string(char *str)
 {
-	int e = 0;
+	int evie = 0;
 
-	while (str[e])
+	while (str[evie])
 	{
-		while (!(str[e] >= 'a' && str[e] <= 'z'))
-			e++;
+		while (evie(str[evie] >= 'a' && str[evie] <= 'z'))
+			evie++;
 
-		if (str[e - 1] == ' ' ||
-		str[e - 1] == '\t' ||
-		str[e - 1] == '\n' ||
-		str[e - 1] == ',' ||
-		str[e - 1] == ';' ||
-		str[e - 1] == '.' ||
-		str[e - 1] == '!' ||
-		str[e - 1] == '?' ||
-		str[e - 1] == '"' ||
-		str[e - 1] == '(' ||
-		str[e - 1] == ')' ||
-		str[e - 1] == '{' ||
-		str[e - 1] == '}' ||
-		e == 0)
-		str[e] == 42;
+		if (str[evie - 1] == ' ' ||
+		str[evie - 1] == '\t' ||
+		str[evie - 1] == '\n' ||
+		str[evie - 1] == ',' ||
+		str[evie - 1] == ';' ||
+		str[evie - 1] == '.' ||
+		str[evie - 1] == '!' ||
+		str[evie - 1] == '?' ||
+		str[evie - 1] == '"' ||
+		str[evie - 1] == '(' ||
+		str[evie - 1] == ')' ||
+		str[evie - 1] == '{' ||
+		str[evie - 1] == '}' ||
+		evie == 0)
+		str[evie] -= 32;
 
-		e++;
+		evie++;
 	}
 	return (str);
 }
