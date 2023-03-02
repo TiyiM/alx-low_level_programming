@@ -5,24 +5,22 @@
 /**
  * *_strncpy - Write a function that copies a string.
  * @dest: buffer storing the copy of the string
- * @src: source string
+ * @src: source char
  * @n: max number of bytes to be copied from src
- * Return: dest
+ * Return: char
  */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
-	int e = 0, src_len = 0;
+	int e = 0;
 
-	while (src[e++])
-		src_len++;
-
-	for (e = 0; src[e] && e < n; e++)
-		dest[e] = src[e];
-
-	for (e = src_len; e < n; e++)
-		dest[e] = '\0';
+	while (e < n && *(src + e) != '\0')
+	{
+		*(dest + e) = *(src + e);
+		e++;
+	}
+	while (e != n)
+		dest[e++] = '\0';
 
 	return (dest);
-
 }
