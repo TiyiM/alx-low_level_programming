@@ -3,18 +3,19 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - Write a function that copies memory area.
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- * Return: nothing
+ * *_memcpy - Write a function that copies memory area.
+ * @dest: the address of memory to copy
+ * @src: the size of the memory to copy
+ * @n: number of bytes to be copied
+ * Return: dest
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int e;
 
 	e = 0;
 
-	while (e < size)
+	while (e < src)
 	{
 		if (e % 10)
 		{
@@ -24,7 +25,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 		{
 			printf("\n");
 		}
-		printf("0x%02x", buffer[e]);
+		printf("0x%02x", dest[e]);
 		e++;
 	}
 	printf("\n");
@@ -36,11 +37,11 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-	char buffer[98] = {0x00};
+	char dest[98] = {0x00};
 
-	simple_print_buffer(buffer, 98);
-	_memset(buffer, 0x01, 95);
+	*_memcpy(dest, 98);
+	_memcpy(buffer, 0x01, 95);
 	printf("-------------------------------------------------\n");
-	simple_print_buffer(buffer, 98);
+	*_memcpy(dest, 98);
 	return (0);
 }
