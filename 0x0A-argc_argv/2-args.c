@@ -10,11 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int e;
+	int i;
 
-	for (e = 0; e < argc; e++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv[e]);
+		printf("%s\n", argv[i]);
 	}
 
 	return (0);
