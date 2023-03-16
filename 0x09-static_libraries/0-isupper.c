@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdio.h>
+#!/bin/bash
 
 /**
 * _isupper - uppercase letters
