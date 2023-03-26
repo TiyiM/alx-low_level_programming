@@ -1,4 +1,4 @@
-#!/bin/bash
+#include "main.h"
 
 /**
  * *_strcat - Write a function that concatenates two strings.
@@ -10,13 +10,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-        int e = 0, dest_len = 0;
+	int i;
+	int j;
 
-        while (dest[e++])
-                dest_len++;
-        for (e = 0; src[e]; e++)
-                dest[dest_len++] = src[e];
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 
-        return (dest);
+	dest[i] = '\0';
+	return (dest);
 }
-

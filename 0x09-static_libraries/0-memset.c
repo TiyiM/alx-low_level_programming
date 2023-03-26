@@ -1,4 +1,4 @@
-#!/bin/bash
+#include "main.h"
 
 /**
  * *_mesmet - fill a block of memory with a specific value
