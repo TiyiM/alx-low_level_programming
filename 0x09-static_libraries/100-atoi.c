@@ -3,8 +3,8 @@
 
 /**
  * _atoi - Write a function that convert a string to an integer.
- * @s: string to convert
- * Return: the int converted from the string
+ * @s: the string to use
+ * Return: integer
  */
 int _atoi(char *s)
 {
