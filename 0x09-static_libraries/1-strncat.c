@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,13 +12,22 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-        int e = 0, dest_len = 0;
+	int e;
+	int m;
 
-        while (dest[e++])
-                dest_len++;
 
-        for (e = 0; src[e] && e < n; e++)
-                dest[dest_len++] = src[e];
-        return (dest);
+	e = 0;
+	while (dest[e] != '\0')
+	{
+		e++;
+	}
+	m = 0;
+	while (m < n && src[m] != '\0')
+	{
+	dest[e] = src[m];
+	e++;
+	m++;
+	}
+	dest[e] = '\0';
+	return (dest);
 }
-
