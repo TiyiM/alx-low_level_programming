@@ -1,10 +1,9 @@
-#!/bin/bash
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * *_memcpy - Write a function that copies memory area.
+ * *_memcpy - Write a function that copies memory area
  * @dest: memory where is stored
  * @src: memory where is copied
  * @n: number of bytes to be copied
@@ -23,4 +22,3 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
