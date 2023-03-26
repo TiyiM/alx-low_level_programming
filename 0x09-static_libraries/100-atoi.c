@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 #include <stdio.h>
 
@@ -9,30 +8,20 @@
  */
 int _atoi(char *s)
 {
-        int p = 0;
-        int t = 0;
-        int evie = 1;
+	int sign = 1, i = 0;
+	unsigned int res = 0;
 
-        while ((s[p] < '0' || s[p] > '9') && s[p] != 0)
-        {
-                if (s[p] == '-')
-                        evie *= -1;
-                p++;
-        }
-        while ((s[p] >= '0' && s[p] <= '9') && s[p] != 0)
-        {
-                if (t >= 0)
-                {
-                        t = t * 10 - (s[p] - '0');
-                        p++;
-                }
-                else
-                {
-                        t = t * 10 - (s[p] - '0');
-                        p++;
-                }
-        }
-         evie *= -1;
-         return (t * evie);
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	{
+		res = (res * 10) + (s[i] - '0');
+		i++;
+	}
+	res *= sign;
+	return (res);
 }
-
