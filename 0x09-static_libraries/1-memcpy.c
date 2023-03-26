@@ -10,16 +10,17 @@
  * @n: number of bytes to be copied
  * Return: dest, with n bytes changed
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-        int e = 0;
-        int m = n;
+	int e = 0;
+	int m = n;
 
-        for (; e < m; e++)
-        {
-                dest[e] = src[e];
-                n--;
-        }
-        return (dest);
+	for (; e < m; e++)
+	{
+		dest[e] = src[e];
+		n--;
+	}
+	return (dest);
 }
 
