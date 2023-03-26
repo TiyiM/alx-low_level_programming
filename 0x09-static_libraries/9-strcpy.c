@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 #include <stdio.h>
 
@@ -9,6 +8,7 @@
  * @src: source
  * Return: string
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int len = 0;
@@ -23,4 +23,3 @@ char *_strcpy(char *dest, char *src)
 
 	return (dest);
 }
-
