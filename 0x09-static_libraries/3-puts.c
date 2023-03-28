@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _puts -  Write a function that prints a string,
@@ -12,4 +13,14 @@ void _puts(char *str)
 		_putchar(*str++);
 	}
 	_putchar('\n');
+}
+
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
