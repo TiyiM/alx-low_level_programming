@@ -5,10 +5,10 @@
  * main - Write a program that prints its name, followed by a new line.
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0
+ * Return: 0 (success)
  */
 
-int main(int argc _attribute_((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", *argv);
 
