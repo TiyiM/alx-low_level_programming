@@ -1,13 +1,13 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include <string.h>
 
 /**
- * _check_num - check - string there are digit
+ * check_num - check - string there are digit
  * @str: array str
- * Return: 0
- */
+ * Return: Always 0 (Success)
+*/
 
 int check_num(char *str)
 {
@@ -28,34 +28,30 @@ int check_num(char *str)
 }
 
 /**
- * main - print the name of the program
- * @argc: count arguments
- * @argv: arguments
- * Return: 0
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
+
 	/*Declaring variables*/
-
 	int count;
-
-	int str atoi;
-
+	int str_to_int;
 	int sum = 0;
 
 	count = 1;
-	while (count < argc) /*Goes through the whole arra*/
+	while (count < argc) /*Goes through the whole array*/
 	{
-
-
 		if (check_num(argv[count]))
-
 		{
-			str_atoi_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-			sum += str_atoi_int;
+			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+			sum += str_to_int;
 		}
-		/*Condition if one at the number contains symbols that are not digits*/
+
+		/*Condition if one of the number contains symbols that are not digits*/
 		else
 		{
 			printf("Error\n");
