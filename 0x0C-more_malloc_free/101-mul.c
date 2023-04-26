@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 
 /**
  * _is_zero - determines if any number is zero
  * @argv: argument vector.
+ *
  * Return: no return.
  */
 void _is_zero(char *argv[])
@@ -38,6 +38,7 @@ void _is_zero(char *argv[])
  * _initialize_array - set memery to zero in a new array
  * @ar: char array.
  * @lar: length of the char array.
+ *
  * Return: pointer of a char array.
  */
 char *_initialize_array(char *ar, int lar)
@@ -55,6 +56,7 @@ char *_initialize_array(char *ar, int lar)
  * and checks if number is in base 10.
  * @argv: arguments vector.
  * @n: row of the array.
+ *
  * Return: length of the number.
  */
 int _checknum(char *argv[], int n)
@@ -72,10 +74,12 @@ int _checknum(char *argv[], int n)
 }
 
 /**
- * main - Write a program that multiplies two positive numbers.
+ * main - Entry point.
+ * program that multiplies two positive numbers.
  * @argc: number of arguments.
  * @argv: arguments vector.
- * Return: 0 (success)
+ *
+ * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
